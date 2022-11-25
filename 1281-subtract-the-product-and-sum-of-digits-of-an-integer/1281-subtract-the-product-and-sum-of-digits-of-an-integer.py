@@ -8,3 +8,5 @@ class Solution:
             n//=10
         return p-s
         
+        
+        #return eval('*'.join(str(n))) - eval('+'.join(str(n)))
