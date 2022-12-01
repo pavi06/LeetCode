@@ -1,9 +1,9 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         s=""
-        for i in range(len(word1) if len(word1)<len(word2) else len(word2)):
-            s+=word1[i]
-            s+=word2[i]
+        for i,(w1,w2) in enumerate(zip(word1,word2)):
+            s+=w1
+            s+=w2
         if word1:
             s+=word1[i+1:]
         if word2:
