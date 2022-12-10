@@ -6,10 +6,10 @@
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         dummy=ListNode(0,head);
-        fastpt=dummy
+        fastpt=dummy    #declaring two pointer
         slowpt=dummy
         for i in range(n):
-            fastpt=fastpt.next
+            fastpt=fastpt.next  #fastpointer moves till n
         while(fastpt.next):
             fastpt=fastpt.next
             slowpt=slowpt.next
