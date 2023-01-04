@@ -5,4 +5,6 @@ class Solution:
                 continue
             return i
         return len(nums)
+    
+    #((n * (n+1)) // 2) - sum(l) 
         
