@@ -13,5 +13,6 @@ class Solution:
                 ind=i+1
         return ind                   #return the index 
                     
-#O(n) complexity           
+#O(n) complexity  
+#bruteforce O(n^2)=> 2for loop 
         
