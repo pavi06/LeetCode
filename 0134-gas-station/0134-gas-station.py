@@ -1,9 +1,6 @@
 class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
-        total=0
-        for i in range(len(gas)):    #calculating whether total gas is less than total cost
-            total+=gas[i]-cost[i]
-        if total<0:                   #if total cost is less then return -1
+        if sum(gas)-sum(cost)<0:        #if totalgas is less then totalcost return -1
             return -1
         rem=ind=0
         for i in range(len(gas)):       #start from 0 index and check it is feasible to travel
