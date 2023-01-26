@@ -8,9 +8,7 @@ class Solution:
         if head==None or head.next==None or head.next.next==None:
             return head
         odd=oh=head
-        # oh=head
         even=eh=head.next
-        # eh=head.next
         while(odd.next!=None and even.next!=None):
             odd.next=odd.next.next
             odd=odd.next
