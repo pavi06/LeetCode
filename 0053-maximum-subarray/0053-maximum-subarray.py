@@ -8,3 +8,5 @@ class Solution:
             currsum+=i
             maxsum=max(maxsum,currsum)
         return maxsum
+    
+#sliding window
