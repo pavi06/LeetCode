@@ -5,15 +5,14 @@ class Solution(object):
         :type target: str
         :rtype: str
         """
-        if(target<letters[0]) or (target>=letters[len(letters)-1]):
-            return letters[0]
+        l=len(letters)
         start=0
-        end=len(letters)-1
-        while(start<end):
+        end=l-1
+        while(start<=end):
             mid=start+(end-start)//2
-            if(letters[mid]<=target):
-                start=mid+1
+            if(letters[mid]>target):
+                end=mid-1
             else:
-                end=mid
-        return letters[start];
+                start=mid+1
+        return letters[start%l];
         
